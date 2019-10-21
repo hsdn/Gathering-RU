@@ -1,0 +1,19 @@
+{
+    "name": "Gathering",
+    "options": {
+        "niceName": "Gathering",
+        "guiName": "Gathering",
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js",
+        "settingsVersion": 1
+    },
+    "author": "ZC",
+	"translation":"ITunk",
+    "description": "Collecting object position marker",
+    "servers": ["https://raw.githubusercontent.com/ITunk-Tera/Gathering-EU/master/"],
+    "supportUrl": "https://github.com/ITunk-Tera/Gathering-EU/issues",
+    "dependencies": {
+        "tera-message": "https://raw.githubusercontent.com/ITunk-Tera/tera-message/master/module.json"
+    },
+    "version": "86.05"
+}

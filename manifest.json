@@ -1,0 +1,14 @@
+{
+    "files": {
+        "index.js": "f53a8bb61dfad5bcaf9c34958f49bcbd3ce8d0573ad2c414a02d95cb2dbd30a5",
+        "module.json": "8983a729c81f7cb2eef98a5ef012878804feb38c8e785e05978e2160f192441b",
+        "settings_migrator.js": "d38983f1633b36554c75334fc418b626503675921d2d4776511c2403cae802ab"
+    },
+    "defs": {
+        "S_DESPAWN_COLLECTION": 2,
+        "S_DESPAWN_DROPITEM": 4,
+		"S_DUNGEON_EVENT_MESSAGE": 2,
+        "S_SPAWN_COLLECTION": 4,
+        "S_SPAWN_DROPITEM": 8
+    }
+}

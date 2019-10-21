@@ -12,7 +12,7 @@ module.exports = function Gathering(mod) {
 			"alert: " + (mod.settings.sendToAlert  ? "on" : "off"),
 			
 			"plants: " + (plantsMarkers ? "on" : "off"),
-			"mining: " + (miningMarkers ? "on" : "off"),
+			"ore: " + (miningMarkers ? "on" : "off"),
 			"energy: " + (energyMarkers ? "on" : "off")
 		)
 	}

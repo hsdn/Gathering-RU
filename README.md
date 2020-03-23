@@ -1,19 +1,19 @@
-Gathering 
+Подсказка по собирательству
 ======
 
-Commands
+Команды
 
 ------
 
-/8 Command | Description
+/toolbox | Описание команды
 --- | ---
-gat | To enable the module
-gat alert | Warning message
-gat status | Status module
-gat ore | ore display
-gat plants | plants display
-gat energy | energy display
+gat | включение модуля
+gat alert | предупреждающее сообщение
+gat status | состояние модуля
+gat ore | включает отображение руды
+gat plants | включает отображение растений
+gat energy | включает отображение энергии
 
 ------
 
-More collection enquiries https://teralore.com/ru/gatherables/?sl=1
+- Все наименования: https://teralore.com/ru/gatherables/?sl=1

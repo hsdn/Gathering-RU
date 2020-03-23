@@ -7,13 +7,12 @@
         "settingsMigrator": "settings_migrator.js",
         "settingsVersion": 1
     },
-    "author": "ZC",
-	"translation":"ITunk",
-    "description": "Collecting object position marker",
-    "servers": ["https://raw.githubusercontent.com/ITunk-Tera/Gathering-EU/master/"],
-    "supportUrl": "https://github.com/ITunk-Tera/Gathering-EU/issues",
+    "author": "HSDN / ITunk / ZC",
+    "description": "Подсказка по собирательству",
+    "servers": ["https://raw.githubusercontent.com/hsdn/Gathering-RU/master/"],
+    "supportUrl": "https://github.com/hsdn/Gathering-RU/issues",
     "dependencies": {
-        "tera-message": "https://raw.githubusercontent.com/ITunk-Tera/tera-message/master/module.json"
+        "tera-message": "https://raw.githubusercontent.com/tera-mod/tera-message/master/module.json"
     },
-    "version": "86.05"
+    "version": "91.04"
 }

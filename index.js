@@ -8,12 +8,12 @@ module.exports = function Gathering(mod) {
 	
 	function gatheringStatus() {
 		sendStatus(
-			"Gathering: " + (mod.settings.enabled  ? "On"   : "Off"),
-			"alert: " + (mod.settings.sendToAlert  ? "on" : "off"),
+			"Модуль: " + (mod.settings.enabled     ? "вкл"   : "выкл"),
+			"Предупреждающее сообщение: " + (mod.settings.sendToAlert  ? "вкл" : "выкл"),
 			
-			"plants: " + (plantsMarkers ? "on" : "off"),
-			"ore: " + (miningMarkers ? "on" : "off"),
-			"energy: " + (energyMarkers ? "on" : "off")
+			"Отображение растений: " + (plantsMarkers ? "вкл" : "выкл"),
+			"Отображение руды: " + (miningMarkers ? "вкл" : "выкл"),
+			"Отображение энергии: " + (energyMarkers ? "вкл" : "выкл")
 		)
 	}
 	
@@ -37,7 +37,7 @@ module.exports = function Gathering(mod) {
 			switch (arg) {
 				case "alert":
 					mod.settings.sendToAlert = !mod.settings.sendToAlert
-					sendMessage("Warning message " + (mod.settings.sendToAlert ? "on" : "off"))
+					sendMessage("Предупреждающее сообщение " + (mod.settings.sendToAlert ? "вкл" : "выкл"))
 					break
 				case "status":
 					gatheringStatus()
@@ -45,19 +45,19 @@ module.exports = function Gathering(mod) {
 				
 				case "plants":
 					plantsMarkers = !plantsMarkers
-					sendMessage("plants " + (plantsMarkers ? "on" : "off"))
+					sendMessage("Отображение растений " + (plantsMarkers ? "вкл" : "выкл"))
 					break
 				case "ore":
 					miningMarkers = !miningMarkers
-					sendMessage("ore " + (miningMarkers ? "on" : "off"))
+					sendMessage("Отображение руды " + (miningMarkers ? "вкл" : "выкл"))
 					break
 				case "energy":
 					energyMarkers = !energyMarkers
-					sendMessage("energy " + (energyMarkers ? "on" : "off"))
+					sendMessage("Отображение энергии " + (energyMarkers ? "вкл" : "выкл"))
 					break
 				
 				default :
-					sendMessage("Invalid parameter!")
+					sendMessage("Неверный параметр!")
 					break
 			}
 		}
@@ -70,14 +70,14 @@ module.exports = function Gathering(mod) {
 	mod.hook('S_SPAWN_COLLECTION', 4, (event) => {
 		if (mod.settings.enabled) {
 			if (plantsMarkers && (gatherMarker = mod.settings.plants.find(obj => obj.id === event.id))) {
-				sendAlert( ("Found [" + gatherMarker.name + "] " + gatherMarker.msg), 44)
-				sendMessage("Found [" + gatherMarker.name + "] " + gatherMarker.msg)
+				sendAlert( ("Найдено [" + gatherMarker.name + "] " + gatherMarker.msg), 44)
+				sendMessage("Найдено [" + gatherMarker.name + "] " + gatherMarker.msg)
 			} else if (miningMarkers && (gatherMarker = mod.settings.mining.find(obj => obj.id === event.id))) {
-				sendAlert( ("Found [" + gatherMarker.name + "] " + gatherMarker.msg), 44)
-				sendMessage("Found [" + gatherMarker.name + "] " + gatherMarker.msg)
+				sendAlert( ("Найдено [" + gatherMarker.name + "] " + gatherMarker.msg), 44)
+				sendMessage("Найдено [" + gatherMarker.name + "] " + gatherMarker.msg)
 			} else if (energyMarkers && (gatherMarker = mod.settings.energy.find(obj => obj.id === event.id))) {
-				sendAlert( ("Found [" + gatherMarker.name + "] " + gatherMarker.msg), 44)
-				sendMessage("Found [" + gatherMarker.name + "] " + gatherMarker.msg)
+				sendAlert( ("Найдено [" + gatherMarker.name + "] " + gatherMarker.msg), 44)
+				sendMessage("Найдено [" + gatherMarker.name + "] " + gatherMarker.msg)
 			} else {
 				return true
 			}

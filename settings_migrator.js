@@ -1,30 +1,30 @@
 const DefaultSettings = {
     "enabled": 		false,
-    "sendToAlert":  true, // Screen warning
-    "markerId":    98260, // Light beam tips 98260 ---Vergos's Head
+    "sendToAlert":  true, // Предупреждающее сообщение
+    "markerId":    98260, // Свечение 98260 ---Голова драколота
     "plants": [
-        {id: 1, name: 'Special', msg: 'Harmony Grass'},
-        {id: 2, name: 'Plants', msg: 'Wild Cobseed'},
-        {id: 3 ,name: 'Plants', msg: 'Wild Veridia'},
-        {id: 4, name: 'Plants', msg: 'Orange Mushroom'},
-        {id: 5, name: 'Plants', msg: 'Moongourd'},
-        {id: 6, name: 'Plants', msg: 'Apple Tree'}
+        {id: 1, name: 'растения', msg: 'Кустарник'},
+        {id: 2, name: 'растения', msg: 'Кукуруза'},
+        {id: 3 ,name: 'растения', msg: 'Морковь'},
+        {id: 4, name: 'растения', msg: 'Гриб'},
+        {id: 5, name: 'растения', msg: 'Тыква'},
+        {id: 6, name: 'растения', msg: 'Яблоня'}
     ],
     "mining": [
-        {id: 101, name: 'Special', msg: 'Plain Stone'},
-        {id: 102, name: 'Ore', msg: 'Cobala Ore'},
-        {id: 103, name: 'Ore', msg: 'Shadmetal Ore'},
-        {id: 104, name: 'Ore', msg: 'Xermetal Ore'},
-        {id: 105, name: 'Ore', msg: 'Normetal Ore'},
-        {id: 106, name: 'Ore', msg: 'Galborne Ore'}
+        {id: 101, name: 'руда', msg: 'Валун'},
+        {id: 102, name: 'руда', msg: 'Кобаловая руда'},
+        {id: 103, name: 'руда', msg: 'Шадметаллическая руда'},
+        {id: 104, name: 'руда', msg: 'Зерметаллическая руда'},
+        {id: 105, name: 'руда', msg: 'Норметаллическая руда'},
+        {id: 106, name: 'руда', msg: 'Галенит'}
     ],
     "energy": [
-        {id: 201, name: 'Special', msg: 'Achromic Essence'},
-        {id: 202, name: 'Essence', msg: 'Crimson Essence'},
-        {id: 203, name: 'Essence', msg: 'Earth Essence'},
-        {id: 204, name: 'Essence', msg: 'Azure Essence'},
-        {id: 205, name: 'Essence', msg: 'Opal Essence'},
-        {id: 206, name: 'Essence', msg: 'Obsidian Essence'}
+        {id: 201, name: 'энергия', msg: 'Бесцветный кристал'},
+        {id: 202, name: 'энергия', msg: 'Красный кристал'},
+        {id: 203, name: 'энергия', msg: 'Зеленый кристал'},
+        {id: 204, name: 'энергия', msg: 'Голубой кристал'},
+        {id: 205, name: 'энергия', msg: 'Белый кристал'},
+        {id: 206, name: 'энергия', msg: 'Зараженный цветок'}
     ]
 };
 

@@ -5,7 +5,7 @@
         "guiName": "Gathering",
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js",
-        "settingsVersion": 1.01
+        "settingsVersion": 1.02
     },
     "author": "HSDN / ITunk / ZC",
     "description": "Подсказка по собирательству",
@@ -14,6 +14,6 @@
     "dependencies": {
         "tera-message": "https://raw.githubusercontent.com/tera-mod/tera-message/master/module.json"
     },
-    "version": "91.04",
+    "version": "92.03",
     "disableAutoUpdate": false
 }

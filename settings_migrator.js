@@ -1,7 +1,6 @@
 const DefaultSettings = {
     "enabled":       true,
-    "sendToAlert":   false,  // Предупреждающее сообщение
-    "markerId":      98260, // Свечение 98260 -- Голова драколота
+    "sendToAlert":   false, // Предупреждающее сообщение
     "plantsMarkers": true,  // Маркеры растений
     "miningMarkers": true,  // Маркеры руды
     "energyMarkers": true,  // Маркеры энергии

@@ -102,7 +102,7 @@ module.exports = function Gathering(mod) {
 		mod.send('S_SPAWN_DROPITEM', 8, {
 			gameId: gameId*10n,
 			loc: loc,
-			item: mod.settings.markerId,
+			item: 88704, // Памятная монета Велики
 			amount: 1,
 			expiry: 999999
 		});

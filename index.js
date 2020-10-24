@@ -99,7 +99,7 @@ module.exports = function Gathering(mod) {
 	})
 
 	function spawnItem(gameId, loc) {
-		mod.send('S_SPAWN_DROPITEM', 8, {
+		mod.send('S_SPAWN_DROPITEM', 9, {
 			gameId: gameId*10n,
 			loc: loc,
 			item: 88704, // Памятная монета Велики
